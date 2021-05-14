@@ -58,7 +58,12 @@ public class Cli {
         double a = getDouble();
         System.out.println("Zadej druhé číslo:");
         double b = getDouble();
-        System.out.println("Podíl čísel "+a+" a "+b+" je "+logic.divided(a, b));
+        try {
+            System.out.println("Podíl čísel "+a+" a "+b+" je "+logic.divided(a, b));
+        } catch (Exception e) {
+            System.out.println("Nulou nelze dělit!!!");
+        }
+
     }
 
     public static void power() {
@@ -72,7 +77,11 @@ public class Cli {
     public static void factorial() {
         System.out.println("Zadej číslo, ze kterého chceš vypočítat faktoriál: ");
         int num = getInt();
-        System.out.println("Faktoriál z čísla "+num+" je "+logic.factorial(num));
+        try {
+            System.out.println("Faktoriál z čísla "+num+" je "+logic.factorial(num));
+        } catch (Exception e) {
+            System.out.println("Faktoriál ze záporného čísla nelze vypočítat");
+        }
     }
 
     public static int getInt() {
