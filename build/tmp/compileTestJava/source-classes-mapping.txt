@@ -1,0 +1,2 @@
+cz/company/logic/LogicTest.java
+ cz.company.logic.LogicTest
