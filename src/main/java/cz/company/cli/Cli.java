@@ -5,10 +5,10 @@ import cz.company.logic.Logic;
 import java.util.Scanner;
 
 public class Cli {
-    private static Scanner sc = new Scanner(System.in);
-    private static Logic logic = new Logic();
+    private Scanner sc = new Scanner(System.in);
+    private Logic logic = new Logic();
 
-    public static void start() {
+    public void start() {
         while(true) {
             System.out.println("Vyber co chceš udělat: ");
             System.out.println("1) Sčítání");
@@ -29,22 +29,22 @@ public class Cli {
         }
     }
 
-    public static void plus() {
+    public void plus() {
         double[] a = getInput();
         System.out.println("Součet čísel "+a[0]+" a "+a[1]+" je "+logic.plus(a[0], a[1]));
     }
 
-    public static void minus() {
+    public void minus() {
         double[] a = getInput();
         System.out.println("Rozdíl čísel "+a[0]+" a "+a[1]+" je "+logic.minus(a[0], a[1]));
     }
 
-    public static void times() {
+    public void times() {
         double[] a = getInput();
         System.out.println("Součin čísel "+a[0]+" a "+a[1]+" je "+logic.times(a[0], a[1]));
     }
 
-    public static void devided() {
+    public void devided() {
         double[] a = getInput();
         try {
             System.out.println("Podíl čísel "+a[0]+" a "+a[1]+" je "+logic.divided(a[0], a[1]));
@@ -54,12 +54,12 @@ public class Cli {
 
     }
 
-    public static void power() {
+    public void power() {
         double[] a = getInput();
         System.out.println(a[0]+" na "+a[1]+" je "+logic.power(a[0], a[1]));
     }
 
-    public static void factorial() {
+    public void factorial() {
         System.out.println("Zadej číslo, ze kterého chceš vypočítat faktoriál: ");
         int num = getInt();
         try {
@@ -69,7 +69,7 @@ public class Cli {
         }
     }
 
-    public static int getInt() {
+    public int getInt() {
         try {
             return Integer.parseInt(sc.nextLine());
         } catch (Exception ignored) {
@@ -78,7 +78,7 @@ public class Cli {
         return getInt();
     }
 
-    public static double getDouble() {
+    public double getDouble() {
         try {
             return Double.parseDouble(sc.nextLine());
         } catch (Exception ignored) {
@@ -87,7 +87,7 @@ public class Cli {
         return getDouble();
     }
 
-    public static double[] getInput() {
+    public double[] getInput() {
         System.out.println("Zadej první číslo:");
         double a = getDouble();
         System.out.println("Zadej druhé číslo:");
