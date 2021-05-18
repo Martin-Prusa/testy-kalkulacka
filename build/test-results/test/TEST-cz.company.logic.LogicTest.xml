@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="cz.company.logic.LogicTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-17T06:23:30" hostname="Martin-iMac" time="0.058">
+<testsuite name="cz.company.logic.LogicTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-18T07:57:01" hostname="Martin-iMac" time="0.057">
   <properties/>
-  <testcase name="factorial()" classname="cz.company.logic.LogicTest" time="0.024"/>
+  <testcase name="factorial()" classname="cz.company.logic.LogicTest" time="0.022"/>
   <testcase name="plus()" classname="cz.company.logic.LogicTest" time="0.002"/>
-  <testcase name="minus()" classname="cz.company.logic.LogicTest" time="0.002"/>
-  <testcase name="power()" classname="cz.company.logic.LogicTest" time="0.025"/>
-  <testcase name="times()" classname="cz.company.logic.LogicTest" time="0.0"/>
+  <testcase name="minus()" classname="cz.company.logic.LogicTest" time="0.001"/>
+  <testcase name="power()" classname="cz.company.logic.LogicTest" time="0.016"/>
+  <testcase name="times()" classname="cz.company.logic.LogicTest" time="0.002"/>
   <testcase name="divided()" classname="cz.company.logic.LogicTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

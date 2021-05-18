@@ -30,36 +30,24 @@ public class Cli {
     }
 
     public static void plus() {
-        System.out.println("Zadej první číslo:");
-        double a = getDouble();
-        System.out.println("Zadej druhé číslo:");
-        double b = getDouble();
-        System.out.println("Součet čísel "+a+" a "+b+" je "+logic.plus(a, b));
+        double[] a = getInput();
+        System.out.println("Součet čísel "+a[0]+" a "+a[1]+" je "+logic.plus(a[0], a[1]));
     }
 
     public static void minus() {
-        System.out.println("Zadej první číslo:");
-        double a = getDouble();
-        System.out.println("Zadej druhé číslo:");
-        double b = getDouble();
-        System.out.println("Rozdíl čísel "+a+" a "+b+" je "+logic.minus(a, b));
+        double[] a = getInput();
+        System.out.println("Rozdíl čísel "+a[0]+" a "+a[1]+" je "+logic.minus(a[0], a[1]));
     }
 
     public static void times() {
-        System.out.println("Zadej první číslo:");
-        double a = getDouble();
-        System.out.println("Zadej druhé číslo:");
-        double b = getDouble();
-        System.out.println("Součin čísel "+a+" a "+b+" je "+logic.times(a, b));
+        double[] a = getInput();
+        System.out.println("Součin čísel "+a[0]+" a "+a[1]+" je "+logic.times(a[0], a[1]));
     }
 
     public static void devided() {
-        System.out.println("Zadej první číslo:");
-        double a = getDouble();
-        System.out.println("Zadej druhé číslo:");
-        double b = getDouble();
+        double[] a = getInput();
         try {
-            System.out.println("Podíl čísel "+a+" a "+b+" je "+logic.divided(a, b));
+            System.out.println("Podíl čísel "+a[0]+" a "+a[1]+" je "+logic.divided(a[0], a[1]));
         } catch (Exception e) {
             System.out.println("Nulou nelze dělit!!!");
         }
@@ -67,11 +55,8 @@ public class Cli {
     }
 
     public static void power() {
-        System.out.println("Zadej první číslo:");
-        double a = getDouble();
-        System.out.println("Zadej druhé číslo:");
-        double b = getDouble();
-        System.out.println(a+" na "+b+" je "+logic.power(a, b));
+        double[] a = getInput();
+        System.out.println(a[0]+" na "+a[1]+" je "+logic.power(a[0], a[1]));
     }
 
     public static void factorial() {
@@ -100,5 +85,13 @@ public class Cli {
             System.out.println("Toto není číslo");
         }
         return getDouble();
+    }
+
+    public static double[] getInput() {
+        System.out.println("Zadej první číslo:");
+        double a = getDouble();
+        System.out.println("Zadej druhé číslo:");
+        double b = getDouble();
+        return new double[]{a,b};
     }
 }
